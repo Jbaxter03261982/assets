@@ -31,7 +31,9 @@ jobs:
       - name: Run check
         run: make check
 
-      - name: Commit changes
+   
+   - name: Commit change
+      
         if: success()
         uses: stefanzweifel/git-auto-commit-action@v4.16.0
         with:
